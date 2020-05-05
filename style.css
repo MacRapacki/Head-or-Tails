@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+button {
+    width: 140px;
+    height: 70px;
+    margin: 20px 40px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+p {
+    font-size: 25px;
+}
