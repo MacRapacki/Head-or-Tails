@@ -25,8 +25,9 @@ const arr = ['Heads', 'Tails']
 
 const winCheck = () => {
     const indexNumber = (Math.floor(Math.random() * arr.length));
-
-    if (choice.innerHTML === arr[indexNumber]) {
+    if (choice.innerHTML === '') {
+        alert('Choose Your coin side')
+    } else if (choice.innerHTML === arr[indexNumber]) {
         totalGames.innerHTML++;
         winNumber.innerHTML++;
         choice.innerHTML = '';
