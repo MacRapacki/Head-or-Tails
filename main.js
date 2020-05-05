@@ -19,6 +19,8 @@ const playBtn = document.querySelector('.play')
 const winNumber = document.querySelector('p.win span')
 const losNumber = document.querySelector('p.lost span')
 const totalGames = document.querySelector('p.total span')
+const resultInfo = document.querySelector('p.result')
+
 
 const arr = ['Heads', 'Tails']
 
@@ -30,13 +32,13 @@ const winCheck = () => {
     } else if (choice.innerHTML === arr[indexNumber]) {
         totalGames.innerHTML++;
         winNumber.innerHTML++;
+        resultInfo.innerHTML = `You  chosen ${choice.innerHTML} and coin show ${arr[indexNumber]}. You win!`
         choice.innerHTML = '';
-
     } else {
         totalGames.innerHTML++;
         losNumber.innerHTML++;
+        resultInfo.innerHTML = `You  chosen ${choice.innerHTML} and coin show ${arr[indexNumber]}. You Lost!`
         choice.innerHTML = '';
-
     }
 }
 
